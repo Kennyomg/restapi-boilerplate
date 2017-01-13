@@ -1,0 +1,38 @@
+{
+  "name": "restapi-boilerplate",
+  "version": "0.0.1",
+  "description": "REST API boilerplate",
+  "private": false,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js --production",
+    "dev": "node server.js --development",
+    "test": "node server.js --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "REST",
+    "API"
+  ],
+  "author": "Kenrick Halff <kenrickhalff@gmail.com> (http://kenrickhalff.com)",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "express-useragent": "^1.0.6",
+    "lodash": "^4.5.1",
+    "mysql": "^2.10.2",
+    "sequelize": "^3.19.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0"
+  }
+}
