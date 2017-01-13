@@ -15,6 +15,7 @@ const ApiServer = require('./ApiServer');
 const server = new ApiServer(app);
 const db = require('./models');
 
+// Uncomment the { force: true } parameter to overwrite the existing database
 db.sequelize.sync(/* { force: true } */).then(() => {
   console.log('Database up and running'); // eslint-disable-line
   server.startHttp(config.apiserver.http_port);
